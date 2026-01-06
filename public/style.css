@@ -1,0 +1,176 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #e5e5e5;
+}
+
+/* Hero */
+.hero {
+    height: 240px;
+    background: linear-gradient(135deg, #b00610, #141414);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.overlay p {
+    margin-top: 10px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* Container */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    gap: 40px;
+}
+
+/* Card */
+.card {
+    background: #181818;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+.card h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    border-left: 4px solid #e50914;
+    padding-left: 10px;
+}
+
+/* Form */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #b3b3b3;
+}
+
+.form-group input,
+.form-group select {
+    background: #222;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #e50914;
+}
+
+/* Button */
+.form-action {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+}
+
+.form-action button {
+    width: 100%;
+    padding: 12px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-action button:hover {
+    background: #b00610;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #222;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    color: #e5e5e5;
+}
+
+tbody tr {
+    border-bottom: 1px solid #2a2a2a;
+}
+
+tbody tr:hover {
+    background: #202020;
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.edit {
+    background: #2ecc71;
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    color: #999;
+    border-top: 1px solid #222;
+}

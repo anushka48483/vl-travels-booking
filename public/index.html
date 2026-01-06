@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VL Travels Ltd | Bus Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>VL Travels Ltd</h1>
+        <p>Premium Online Bus Seat Booking Experience</p>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Booking Section -->
+    <section class="card">
+        <h2>Book Your Journey</h2>
+
+        <form id="bookingForm" class="form-grid">
+            <input type="hidden" id="bookingId">
+
+            <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" id="customerName" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Bus Type</label>
+                <select id="busType" required>
+                    <option value="">Select Bus Type</option>
+                    <option value="AC">AC Bus (₹800 / seat)</option>
+                    <option value="Non-AC">Non-AC Bus (₹500 / seat)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Number of Seats</label>
+                <input type="number" id="seats" min="1" required>
+            </div>
+
+            <div class="form-action">
+                <button type="submit">Confirm Booking</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Table Section -->
+    <section class="card">
+        <h2>Booking Details</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Bus Type</th>
+                        <th>Seats</th>
+                        <th>Total Price (₹)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingTable"></tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 VL Travels Ltd • Inspired by Premium Design</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
